@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AAsterisk.cs" />
+    <Compile Include="AStar.cs" />
     <Compile Include="Collections\PriorityStateQueue.cs" />
     <Compile Include="Heuristic.cs" />
     <Compile Include="Operator.cs" />

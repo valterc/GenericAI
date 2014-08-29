@@ -14,7 +14,7 @@ using System.Threading;
 
 namespace GenericAI
 {
-    public class AAsterisk
+    public class AStar
     {
         private State originalState;
         private List<Operator> operators;
@@ -32,7 +32,7 @@ namespace GenericAI
             }
         }
 
-        public AAsterisk(State original, List<Operator> operators, Heuristic heuristic)
+        public AStar(State original, List<Operator> operators, Heuristic heuristic)
         {
             if (original == null)
             {
@@ -56,7 +56,7 @@ namespace GenericAI
 
             this.states = new PriorityStateQueue();
             this.visitedStates = new List<State>();
-            this.thread = new Thread(RunAA);
+            this.thread = new Thread(RunAStar);
 
             this.originalState = original;
             this.operators = operators;
@@ -78,7 +78,7 @@ namespace GenericAI
             this.thread.Start();
         }
 
-        private void RunAA()
+        private void RunAStar()
         {
             this.states.Push(originalState);
             Result result = null;
