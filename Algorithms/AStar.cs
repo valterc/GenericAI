@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 
-namespace GenericAI
+namespace GenericAI.Algorithms
 {
     public class AStar
     {
