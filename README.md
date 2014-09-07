@@ -5,7 +5,7 @@ Included algorithms:
 
 - **A* search** - [more info](http://en.wikipedia.org/wiki/A*_search_algorithm)
 - **Boids** - [more info](http://en.wikipedia.org/wiki/Boids)
-___
+
 
 
 
